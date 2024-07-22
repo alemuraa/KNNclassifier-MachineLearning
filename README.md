@@ -17,6 +17,10 @@ Poiché i due set sono molto grandi, vengono selezionati due sottoinsiemi casual
 ```python
 from tensorflow.keras.datasets import mnist
 (trainX, trainY), (testX, testY) = mnist.load_data()
-
+```
 ### Compito 2: Costruire un classificatore kNN
-xfgi
+Nel secondo compito, dobbiamo implementare un classificatore k-Nearest Neighbour. Per verificare la correttezza delle variabili di input, abbiamo creato alcune funzioni: 'CheckDataset()' e CheckKvalue().
+
+Successivamente, abbiamo classificato il set di dati secondo la teoria kNN, descritta con le formule 2, 3 e 4, e restituito la classificazione ottenuta. La classificazione è stata calcolata utilizzando una funzione creata da noi: KNNclassifier(). Dopo aver applicato la funzione reshape per lavorare in 2 dimensioni e inizializzato le liste, abbiamo calcolato una lista di predizioni e l'abbiamo memorizzata in un dizionario. Quindi abbiamo ordinato in ordine crescente per distanza euclidea e ottenuto il conteggio della classe massima nella lista dei risultati.
+
+Infine, abbiamo calcolato l'accuratezza e il tasso di errore verificando se i valori all'interno della lista delle predizioni erano uguali a testY. La funzione restituisce: accuratezza, tasso di errore e lista delle predizioni.
