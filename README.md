@@ -19,3 +19,4 @@ from tensorflow.keras.datasets import mnist
 (trainX, trainY), (testX, testY) = mnist.load_data()
 
 ### Compito 2: Costruire un classificatore kNN
+xfgi
